@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vann, varme og strøm | Sameiet Bekkefaret 12</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f8f7f3; color: #24332d; font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
+    header { background: #fff; border-bottom: 1px solid #deded8; }
+    .nav { max-width: 1320px; margin: 0 auto; min-height: 92px; padding: 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: flex; align-items: center; gap: 16px; color: #24332d; text-decoration: none; font-weight: 700; font-size: 21px; }
+    .logo { width: 48px; height: 48px; border-radius: 18px; background: #356451; color: #fff; display: grid; place-items: center; font-weight: 800; letter-spacing: 1px; }
+    nav a { color: #42534b; text-decoration: none; margin-left: 28px; font-size: 17px; }
+    main { max-width: 1100px; margin: 0 auto; padding: 70px 24px 100px; }
+    .back { display: inline-block; margin-bottom: 34px; color: #356451; text-decoration: none; font-weight: 700; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 6vw, 68px); line-height: 1.05; margin: 0 0 24px; font-weight: 500; }
+    .intro { max-width: 760px; font-size: 20px; color: #52635b; margin-bottom: 50px; }
+    .notice { background: #356451; color: white; border-radius: 24px; padding: 34px 38px; margin-bottom: 50px; box-shadow: 0 18px 40px rgba(35, 57, 48, 0.12); }
+    .notice h2 { margin-top: 0; font-size: 28px; }
+    .notice p:last-child { margin-bottom: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .info { background: #fff; border-radius: 22px; padding: 32px; }
+    .info h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: 34px; margin-top: 0; }
+    .info p:last-child { margin-bottom: 0; }
+    .info a { color: #356451; font-weight: 700; }
+    footer { background: #253b32; color: #fff; padding: 38px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    @media (max-width: 760px) {
+      .nav { min-height: 76px; }
+      nav { display: none; }
+      main { padding-top: 45px; }
+      .grid { grid-template-columns: 1fr; }
+      .notice, .info { padding: 26px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="../"><span class="logo">B12</span><span>Sameiet Bekkefaret 12</span></a>
+    <nav>
+      <a href="../">Forside</a>
+      <a href="../#meldinger">Meldinger fra styret</a>
+      <a href="../#praktisk">Praktisk informasjon</a>
+      <a href="../#dokumenter">Dokumenter</a>
+      <a href="../#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <a class="back" href="../#praktisk">← Tilbake til praktisk informasjon</a>
+  <h1>Vann, varme og strøm</h1>
+  <p class="intro">Her samler vi praktisk informasjon om byggets tekniske forsyning og hva beboere bør gjøre ved feil.</p>
+  <section class="notice">
+    <h2>Ved vannlekkasje</h2>
+    <p>Steng nærmeste stoppekran dersom det kan gjøres trygt, og kontakt styret umiddelbart. Begrens skaden uten å utsette deg selv eller andre for fare.</p>
+  </section>
+  <div class="grid">
+    <section class="info">
+      <h2>Vann og avløp</h2>
+      <p>Sameiet er tilknyttet kommunalt vann og avløp. Kommunens gebyr beregnes etter eiendommens areal og stipulert forbruk, ikke etter oppgitt individuell vannmåling for hver bolig.</p>
+      <p>Den kommunale spesifikasjonen bruker et beregningsareal på 1 065 m² med en faktor på 1,10.</p>
+      <p><a href="https://www.oslo.kommune.no/skatt-og-naring/eiendomsskatt-og-avgift/kommunale-avgifter/">Informasjon om kommunale avgifter hos Oslo kommune</a></p>
+    </section>
+    <section class="info">
+      <h2>Varme og strøm</h2>
+      <p>Mer informasjon om oppvarmingsløsning, sikringsskap, felles strøm og rutiner ved strømbrudd legges til når teknisk dokumentasjon er tilgjengelig.</p>
+      <p>Ved feil som bare gjelder din egen bolig, kontroller sikringer og eget utstyr. Dersom flere boliger eller fellesarealer er berørt, meld fra til styret.</p>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="footer-inner"><strong>Sameiet Bekkefaret 12</strong><div>Ullern · Oslo</div></div>
+</footer>
+</body>
+</html>
