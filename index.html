@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameiet Bekkefaret 12</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1f2933;
+      background: #f7f7f5;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: #e9e5dc;
+      padding: 90px 24px;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      margin: 0 0 18px;
+      line-height: 1.05;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 70px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.6;
+      color: #52606d;
+    }
+
+    .message {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .message .date {
+      font-size: 14px;
+      color: #7b8794;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: #20262e;
+      color: white;
+      padding: 40px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 65px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Sameiet Bekkefaret 12</div>
+
+    <nav class="nav-links">
+      <a href="#forside">Forside</a>
+      <a href="#meldinger">Meldinger</a>
+      <a href="#praktisk">Praktisk informasjon</a>
+      <a href="#dokumenter">Dokumenter</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="forside">
+  <div class="hero-inner">
+    <h1>Sameiet Bekkefaret 12</h1>
+    <p>
+      Informasjon for beboere og besøkende.
+      Her finner du meldinger fra styret, praktisk informasjon,
+      dokumenter og kontaktinformasjon.
+    </p>
+  </div>
+</section>
+
+<main>
+
+  <section id="meldinger">
+    <h2>Meldinger fra styret</h2>
+
+    <div class="message">
+      <div class="date">August 2026</div>
+      <h3>Sameiet skal bytte forretningsfører</h3>
+      <p>
+        Styret har sagt opp avtalen med USBL og vurderer nå ny løsning
+        for forretningsførsel og administrasjon av sameiet.
+        Mer informasjon kommer når ny løsning er valgt.
+      </p>
+    </div>
+  </section>
+
+  <section id="praktisk">
+    <h2>Praktisk informasjon</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Brann og sikkerhet</h3>
+        <p>Informasjon om brannalarm, rømningsveier og hva du gjør ved alarm.</p>
+      </div>
+
+      <div class="card">
+        <h3>Parkering</h3>
+        <p>Informasjon om robotparkering, gjesteparkering og feil på anlegget.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ventilasjon</h3>
+        <p>Informasjon om ventilasjonsanlegget, filterskifte og fellesbestilling.</p>
+      </div>
+
+      <div class="card">
+        <h3>Elbillading</h3>
+        <p>Informasjon om lading, priser, registrering og support.</p>
+      </div>
+
+      <div class="card">
+        <h3>Avfall</h3>
+        <p>Sortering, avfallshåndtering og praktiske regler.</p>
+      </div>
+
+      <div class="card">
+        <h3>Vedlikehold</h3>
+        <p>Hva sameiet har ansvar for, og hva den enkelte seksjonseier har ansvar for.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="dokumenter">
+    <h2>Dokumenter</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Vedtekter</h3>
+        <p>Gjeldende vedtekter for Sameiet Bekkefaret 12.</p>
+      </div>
+
+      <div class="card">
+        <h3>Husordensregler</h3>
+        <p>Regler og praktiske retningslinjer for sameiet.</p>
+      </div>
+
+      <div class="card">
+        <h3>Branninstruks</h3>
+        <p>Informasjon om sikkerhet og rutiner ved brannalarm.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt styret</h2>
+
+    <div class="card">
+      <h3>Styret i Sameiet Bekkefaret 12</h3>
+      <p>
+        Kontaktinformasjon kommer her.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <strong>Sameiet Bekkefaret 12</strong>
+    <p>Informasjon for beboere og besøkende.</p>
+  </div>
+</footer>
+
+</body>
+</html>
