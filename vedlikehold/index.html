@@ -25,8 +25,6 @@
     .info dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 18px; margin: 0; }
     .info dt { font-weight: 700; }
     .info dd { margin: 0; }
-    .info ul { padding-left: 22px; }
-    .info li { margin-bottom: 14px; }
     .info p:last-child { margin-bottom: 0; }
     footer { background: #253b32; color: #fff; padding: 38px 24px; }
     .footer-inner { max-width: 1100px; margin: 0 auto; }
@@ -40,18 +38,13 @@
       .info dd { margin-bottom: 9px; }
     }
   </style>
+<link rel="stylesheet" href="../assets/subpage-theme.css">
 </head>
 <body>
 <header>
   <div class="nav">
     <a class="brand" href="../"><span class="logo">B12</span><span>Sameiet Bekkefaret 12</span></a>
-    <nav>
-      <a href="../">Forside</a>
-      <a href="../#meldinger">Meldinger fra styret</a>
-      <a href="../#praktisk">Praktisk informasjon</a>
-      <a href="../#dokumenter">Dokumenter</a>
-      <a href="../#kontakt">Kontakt</a>
-    </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="hovedmeny">Meny</button><nav id="hovedmeny"><a href="../">Forside</a><a href="../#styremeldinger">Meldinger</a><a href="../#praktisk">Infobank</a><a href="../kontakt/">Kontakt</a></nav>
   </div>
 </header>
 <main>
@@ -76,17 +69,6 @@
       </dl>
     </section>
     <section class="info">
-      <h2>Trær og hekker</h2>
-      <p>Råd fra utførende trepleier for sameiets beplantning:</p>
-      <ul>
-        <li>Nyetablerte hekker bør vannes én til to ganger i uken og gjødsles om våren.</li>
-        <li>Trær og hekker bør stå i godt jordsmonn med bark som topplag.</li>
-        <li>Vanningsposer kan brukes som langsom dryppvanning i tørre perioder, men skal ikke festes rundt stammen på etablerte trær.</li>
-        <li>Dryppslange om kvelden eller natten gir effektiv vanning i tørre perioder.</li>
-      </ul>
-      <p>Meld fra til styret før større inngrep i beplantning eller fellesarealer.</p>
-    </section>
-    <section class="info">
       <h2>Eksakt brekkresept</h2>
       <dl>
         <dt>BX</dt><dd>40,04 ml</dd>
@@ -102,8 +84,7 @@
     </section>
   </div>
 </main>
-<footer>
-  <div class="footer-inner"><strong>Sameiet Bekkefaret 12</strong><div>Ullern · Oslo</div></div>
-</footer>
+<footer><div class="footer-inner"><a href="../finn-frem/">Finn frem til oss</a><span class="sep">|</span><a href="../kontakt/">Kontakt oss</a></div></footer>
+<script src="../assets/subpage-nav.js"></script>
 </body>
 </html>
