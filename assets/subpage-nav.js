@@ -10,3 +10,11 @@ if(menuButton&&menu){
     menuButton.setAttribute('aria-expanded','false');
   }));
 }
+
+const footer=document.querySelector('footer');
+if(footer){
+  const updated=document.createElement('p');
+  updated.className='last-updated';
+  updated.textContent='Sist oppdatert: 9. september 2026';
+  footer.parentNode.insertBefore(updated,footer);
+}
