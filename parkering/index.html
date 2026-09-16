@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
+<html lang="no"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parkering og garasje | Sameiet Bekkefaret 12</title>
@@ -153,6 +152,28 @@
       border-radius: 0 14px 14px 0;
     }
 
+    .cost-box {
+      background: var(--theme-paper-light, #f4f4f1);
+      border: 4px solid #f47a20;
+      border-radius: 22px;
+      padding: 30px 34px;
+      margin: 28px 0;
+    }
+
+    .cost-box h2 {
+      margin: 0 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-weight: 500;
+    }
+
+    .cost-tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #c8530d;
+      font-weight: 800;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -168,6 +189,10 @@
 
     .info p:last-child {
       margin-bottom: 0;
+    }
+
+    .garage-door {
+      grid-column: 2;
     }
 
     footer {
@@ -196,6 +221,10 @@
 
       .grid {
         grid-template-columns: 1fr;
+      }
+
+      .garage-door {
+        grid-column: auto;
       }
 
       .emergency,
@@ -228,8 +257,8 @@
   <h1>Parkering og garasje</h1>
 
   <p class="intro">
-    Sameiet Bekkefaret 12 har et automatisert parkeringsanlegg,
-    CL 542 v8, med totalt 9 parkeringsplasser. Service og vedlikehold
+    Sameiet Bekkefaret 12 har et automatisert parkeringsanlegg
+    med totalt 9 parkeringsplasser. Service og vedlikehold
     utføres av Metrisk Robotparkering.
   </p>
 
@@ -276,11 +305,25 @@
 
     <div class="warning">
       <strong>Viktig:</strong>
-      Ikke bestill serviceutrykning før feilrettingsprosedyren ved
-      kontrollpanelet er forsøkt. Dersom prosedyren kunne ha løst
-      problemet, kan utrykningen bli behandlet som brukerfeil og
-      medføre kostnader for sameiet.
+      Forsøk alltid feilrettingsprosedyren ved kontrollpanelet før en
+      serviceutrykning bestilles. Hvis feilen kunne vært løst med denne
+      prosedyren, kan utrykningen bli regnet som brukerfeil. Se gjeldende
+      priser nedenfor.
     </div>
+  </section>
+
+  <section class="cost-box">
+    <div class="cost-tag">Kan medføre betydelige kostnader</div>
+    <h2>Kostnader ved utrykning</h2>
+    <p>Prisene nedenfor er inkludert 25 % mva. og gjelder i henhold til serviceavtalen:</p>
+    <ul>
+      <li>Servicetekniker: <strong>1 675 kr per påbegynt arbeidstime</strong>, inkludert reisetid.</li>
+      <li>Etter kl. 15 på hverdager: 50 % overtidstillegg, tilsvarende <strong>2 512,50 kr per time</strong>.</li>
+      <li>Helger og helligdager: 100 % overtidstillegg, tilsvarende <strong>3 350 kr per time</strong>.</li>
+      <li>Utrykningsgebyr etter kl. 15 på hverdager: <strong>3 125 kr</strong>.</li>
+      <li>Utrykningsgebyr i helger og på helligdager: <strong>5 000 kr</strong>.</li>
+    </ul>
+    <p>Utrykningsgebyret kommer i tillegg til serviceteknikerens arbeidstid og reisetid.</p>
   </section>
 
   <section class="steps">
@@ -362,15 +405,6 @@
   </section>
 
   <div class="grid">
-
-    <section class="info">
-      <h2>Garasjeport</h2>
-      <p>
-        Garasjeporten har serviceavtale med <strong>Nassau</strong>.
-        Meld feil, unormal lyd eller andre problemer med porten til styret.
-      </p>
-    </section>
-
     <section class="info">
       <h2>Service</h2>
       <p>
@@ -389,19 +423,6 @@
     </section>
 
     <section class="info">
-      <h2>Kostnader ved utrykning</h2>
-      <p>Prisene nedenfor er inkludert 25 % mva. og gjelder i henhold til serviceavtalen:</p>
-      <ul>
-        <li><strong>Servicetekniker:</strong> 1 675 kr per påbegynt arbeidstime, inkludert reisetid.</li>
-        <li><strong>Etter kl. 15 på hverdager:</strong> 50 % overtidstillegg, tilsvarende 2 512,50 kr per time.</li>
-        <li><strong>Helger og helligdager:</strong> 100 % overtidstillegg, tilsvarende 3 350 kr per time.</li>
-        <li><strong>Utrykningsgebyr etter kl. 15 på hverdager:</strong> 3 125 kr.</li>
-        <li><strong>Utrykningsgebyr i helger og på helligdager:</strong> 5 000 kr.</li>
-      </ul>
-      <p>Utrykningsgebyret kommer i tillegg til serviceteknikerens arbeidstid og reisetid.</p>
-    </section>
-
-    <section class="info">
       <h2>Om anlegget</h2>
 
       <p>
@@ -417,12 +438,21 @@
       </p>
     </section>
 
+    <section class="info garage-door">
+      <h2>Garasjeport</h2>
+      <p>
+        Garasjeporten har serviceavtale med <strong>Nassau</strong>.
+        Meld feil, unormal lyd eller andre problemer med porten til styret.
+      </p>
+    </section>
+
   </div>
 
 </main>
 
 <footer><div class="footer-inner"><a href="../finn-frem/">Finn frem til oss</a><span class="sep">|</span><a href="../kontakt/">Kontakt oss</a></div></footer>
 
-<script src="../assets/subpage-nav.js?v=20260909"></script>
-</body>
-</html>
+<script src="../assets/subpage-nav.js?v=20260915"></script>
+
+
+</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
