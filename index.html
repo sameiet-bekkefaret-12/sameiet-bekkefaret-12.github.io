@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="no"><head>
+<html lang="no">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Praktisk informasjon og meldinger for beboere og besøkende i Sameiet Bekkefaret 12.">
@@ -27,8 +28,8 @@ footer{padding:34px 0;background:#17191a;color:#bbb}.footer-inner{display:flex;j
 <main>
 <section class="hero"><div class="wrap"><div class="hero-content"><div class="eyebrow">Sameiet Bekkefaret 12 · Ullern</div><h1>Praktisk informasjon, samlet på ett sted.</h1><p>Rask tilgang til det du trenger om bygget, fellesanleggene og hverdagen i sameiet.</p><a class="button" href="#praktisk">Finn informasjon</a></div></div></section>
 <section class="facts"><div class="wrap fact-grid"><a class="fact" href="regler/"><strong>8</strong><span>boenheter</span></a><a class="fact" href="om-bygget/"><strong>2024</strong><span>byggeår</span></a><a class="fact" href="parkering/"><strong>9</strong><span>robotparkeringsplasser</span></a><a class="fact" href="brann/"><strong>24/7</strong><span>døgnbemannet alarmmottak</span></a></div></section>
-<section class="alerts" id="meldinger"><div class="wrap"><div class="section-head"><span class="alert-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v9"></path><path d="M12 18h.01"></path></svg></span><h2>Viktige meldinger</h2></div><div class="alert-list"><article class="alert active"><time>Aktuell status</time><strong>Ingen aktive driftsmeldinger</strong><p>Nye, tidskritiske beskjeder fra styret vises i dette markerte feltet.</p></article><a class="alert shortcut" href="brann/"><time>Brann</time><strong>Ring alltid 110 ved brann</strong><p>Se branninstruks, rømningsveier og informasjon om alarmanlegget.</p></a><a class="alert shortcut" href="#praktisk"><time>Driftsstans</time><strong>Finn riktig anlegg</strong><p>Velg aktuell underside for første tiltak og kontaktinformasjon.</p></a></div></div></section>
-<section class="board-news" id="styremeldinger"><div class="wrap"><div class="section-head"><span class="bell-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"></path><path d="M10 21h4"></path></svg></span><h2>Meldinger fra styret</h2></div><div class="news-grid"><a class="news-item" href="meldinger/#forretningsforer"><time>August 2026</time><strong>Sameiet skal bytte forretningsfører</strong><span>Les mer →</span></a></div><div class="all-messages"><a href="meldinger/">Alle meldinger</a></div></div></section>
+<section class="alerts" id="meldinger"><div class="wrap"><div class="section-head"><span class="alert-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v9"/><path d="M12 18h.01"/></svg></span><h2>Viktige meldinger</h2></div><div class="alert-list"><article class="alert active"><time>Aktuell status</time><strong>Ingen aktive driftsmeldinger</strong><p>Nye, tidskritiske beskjeder fra styret vises i dette markerte feltet.</p></article><a class="alert shortcut" href="brann/"><time>Brann</time><strong>Ring alltid 110 ved brann</strong><p>Se branninstruks, rømningsveier og informasjon om alarmanlegget.</p></a><a class="alert shortcut" href="#praktisk"><time>Driftsstans</time><strong>Finn riktig anlegg</strong><p>Velg aktuell underside for første tiltak og kontaktinformasjon.</p></a></div></div></section>
+<section class="board-news" id="styremeldinger"><div class="wrap"><div class="section-head"><span class="bell-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/><path d="M10 21h4"/></svg></span><h2>Meldinger fra styret</h2></div><div class="news-grid"><a class="news-item" href="meldinger/#forretningsforer"><time>August 2026</time><strong>Sameiet skal bytte forretningsfører</strong><span>Les mer →</span></a></div><div class="all-messages"><a href="meldinger/">Alle meldinger</a></div></div></section>
 <section class="practical" id="praktisk"><div class="wrap"><div class="top"><h2>Praktisk informasjon</h2><p>Nyttig informasjon om boligen, fellesanleggene og sameiet.</p></div><div class="card-grid">
 <a class="card urgent" href="brann/"><span class="num">01</span><span class="tag">Sikkerhet</span><h3>Brann og sikkerhet</h3><p>Brannalarm, rømningsveier og hva du gjør ved alarm.</p></a>
 <a class="card" href="parkering/"><span class="num">02</span><span class="tag">Anlegg</span><h3>Parkering</h3><p>Robotparkering, gjesteparkering og feil på anlegget.</p></a>
@@ -48,6 +49,5 @@ const menu=document.querySelector('#hovedmeny');
 menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
 menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
 </script>
-
-
-</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
+</body>
+</html>

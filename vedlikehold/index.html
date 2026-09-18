@@ -26,6 +26,9 @@
     .info dt { font-weight: 700; }
     .info dd { margin: 0; }
     .info p:last-child { margin-bottom: 0; }
+    .paint-info { grid-column: 1 / -1; border-top: 5px solid #ef7a22; }
+    .paint-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
+    .paint-details h3 { margin: 0 0 14px; font-size: 21px; }
     footer { background: #253b32; color: #fff; padding: 38px 24px; }
     .footer-inner { max-width: 1100px; margin: 0 auto; }
     @media (max-width: 760px) {
@@ -36,6 +39,7 @@
       .notice, .info { padding: 26px; }
       .info dl { grid-template-columns: 1fr; gap: 3px; }
       .info dd { margin-bottom: 9px; }
+      .paint-details { grid-template-columns: 1fr; gap: 24px; }
     }
   </style>
 <link rel="stylesheet" href="../assets/subpage-theme.css">
@@ -50,13 +54,36 @@
 <main>
   <a class="back" href="../#praktisk">← Tilbake til praktisk informasjon</a>
   <h1>Vedlikehold</h1>
-  <p class="intro">Her samler vi praktiske produktopplysninger som gjør senere vedlikehold og utbedringer enklere.</p>
-  <section class="notice">
-    <h2>Korrekt veggmaling</h2>
-    <p>Malingen som er brukt ved tidligere utbedringer er <strong>1140 Sand – Flügger Flutex Pro 5</strong>.</p>
-    <p>Den tidligere oppgitte fargen Østersbeige, NCS S 2005-Y20R, er ikke korrekt for disse veggene.</p>
-  </section>
+  <p class="intro">Her samler vi praktiske produktopplysninger og vedlikeholdsrutiner for boligene, bygningene og fellesområdene.</p>
   <div class="grid">
+    <section class="info paint-info">
+      <h2>Standard veggfarge i boenhetene</h2>
+      <p>Ved overlevering var standard veggfarge i boenhetene <strong>1140 Sand – Flügger Flutex Pro 5</strong>. Enkelte beboere kan senere ha malt veggene i andre farger, så kontroller alltid eksisterende overflate før du bestiller maling.</p>
+      <p>Den tidligere oppgitte fargen Østersbeige, NCS S 2005-Y20R, er ikke korrekt for standardveggene.</p>
+      <div class="paint-details">
+        <div>
+          <h3>Produktopplysninger</h3>
+          <dl>
+            <dt>Produkt</dt><dd>Flügger Flutex Pro 5</dd>
+            <dt>Farge</dt><dd>1140 Sand</dd>
+            <dt>Glans</dt><dd>5</dd>
+            <dt>Base</dt><dd>Base 1</dd>
+            <dt>Spann</dt><dd>9,10 liter</dd>
+            <dt>Etikettnummer</dt><dd>30842</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Eksakt brekkresept</h3>
+          <dl>
+            <dt>BX</dt><dd>40,04 ml</dd>
+            <dt>RD-X</dt><dd>4,589 ml</dd>
+            <dt>YY-X</dt><dd>53,586 ml</dd>
+          </dl>
+          <p>Resepten gjelder 9,10 liter Base 1. Ved en annen spannstørrelse må fargehandelen skalere mengdene tilsvarende.</p>
+          <p>Ta med produktnavn, fargenavn og brekkresept ved bestilling, og gjør alltid et kontrollstrøk før et større område males.</p>
+        </div>
+      </div>
+    </section>
     <section class="info">
       <h2>Felles verktøy og utstyr</h2>
       <p>Sameiet har følgende verktøy og utstyr tilgjengelig i fellesområdet:</p>
@@ -69,33 +96,45 @@
       <p><strong>Foreløpig liste:</strong> Oversikten skal kompletteres med øvrig felles verktøy og utstyr.</p>
     </section>
     <section class="info">
-      <h2>Produktopplysninger</h2>
-      <dl>
-        <dt>Produkt</dt><dd>Flügger Flutex Pro 5</dd>
-        <dt>Farge</dt><dd>1140 Sand</dd>
-        <dt>Glans</dt><dd>5</dd>
-        <dt>Base</dt><dd>Base 1</dd>
-        <dt>Spann</dt><dd>9,10 liter</dd>
-        <dt>Etikettnummer</dt><dd>30842</dd>
-      </dl>
-    </section>
-    <section class="info">
-      <h2>Eksakt brekkresept</h2>
-      <dl>
-        <dt>BX</dt><dd>40,04 ml</dd>
-        <dt>RD-X</dt><dd>4,589 ml</dd>
-        <dt>YY-X</dt><dd>53,586 ml</dd>
-      </dl>
-      <p>Resepten er for 9,10 liter Base 1. Ved en annen spannstørrelse må fargehandelen skalere mengdene tilsvarende.</p>
-      <p>Ta med produktnavn, fargenavn og brekkresept ved bestilling, og gjør alltid et kontrollstrøk før et større område males.</p>
-    </section>
-    <section class="info">
       <h2>Periodisk rengjøring i garasjen</h2>
       <p>Bilplattformer, sluk, rister og øvrige garasjearealer rengjøres som en del av sameiets periodiske vedlikeholdsarbeid.</p>
+    </section>
+    <section class="info">
+      <h2>Parkett og gulvvarme</h2>
+      <ul>
+        <li>Hold luftfuktigheten mellom 30 og 60 prosent og romtemperaturen mellom 18 og 23 °C.</li>
+        <li>Parkettens overflatetemperatur skal ikke overstige 27 °C.</li>
+        <li>Bruk støvsuger, tørrmopp eller en lett fuktet klut. Synlig fukt bør forsvinne innen ett minutt.</li>
+        <li>Unngå grønnsåpe, skurepulver og rengjøringsmidler med ammoniakk.</li>
+      </ul>
+      <p>Mindre sprekker og knirk kan oppstå i fyringssesongen når luften er tørr. Dette går ofte tilbake når luftfuktigheten øker.</p>
+    </section>
+    <section class="info">
+      <h2>Tak og avrenning</h2>
+      <p>Taket bør kontrolleres to ganger i året. Takflater, sluk og renner rengjøres vår og høst, og løv, fuglereir og annet som kan hindre avrenningen fjernes.</p>
+      <p>Etter arbeid på taket skal materialrester og annet som kan skade tekkingen fjernes. Nye gjennomføringer eller reparasjoner må avklares med fagkyndig taktekker.</p>
+    </section>
+    <section class="info">
+      <h2>Plen, trær og hekker</h2>
+      <ul>
+        <li>Plenen klippes normalt til omtrent 4–5 cm og gjødsles 3–4 ganger i sesongen.</li>
+        <li>Trær og hekker, blant annet agnbøk, plommetrær og prydkirsebær, bør stå i godt jordsmonn med bark som topplag.</li>
+        <li>Nyetablerte hekker vannes 1–2 ganger i uken. Vann grundig, fremfor ofte og lite.</li>
+        <li>Agnbøkhekk holdes ideelt på omtrent 160–180 cm. Blir den for høy, kan den miste løvverk nederst på stammen.</li>
+        <li>Gjødsle på våren. I tørre perioder kan dryppslange brukes om kvelden eller natten.</li>
+        <li>Oppbinding av trær kontrolleres årlig og fjernes etter 3–5 år.</li>
+        <li>Stauder deles og fornyes omtrent hvert 3.–5. år.</li>
+      </ul>
+      <p><strong>Vanningsposer:</strong> Posene gir langsom og effektiv vanning på samme måte som en dryppslange. En full pose varer i omtrent åtte timer. I tørre perioder fylles posene 1–2 ganger i uken, særlig de første to årene etter planting.</p>
+    </section>
+    <section class="info">
+      <h2>Rekkverk og glass</h2>
+      <p>Malte rekkverk og metalldeler har fargen RAL 7016. Rengjør med pH-nøytralt middel og en myk klut eller svamp.</p>
+      <p>Ikke bruk stålull, metallbørster eller rengjøringsmidler med slipemiddel. Glassrekkverk rengjøres regelmessig, og skader i overflatebehandlingen meldes til styret.</p>
     </section>
   </div>
 </main>
 <footer><div class="footer-inner"><a href="../finn-frem/">Finn frem til oss</a><span class="sep">|</span><a href="../kontakt/">Kontakt oss</a></div></footer>
-<script src="../assets/subpage-nav.js?v=20260909"></script>
+<script src="../assets/subpage-nav.js?v=20260915"></script>
 </body>
 </html>

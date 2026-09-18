@@ -25,6 +25,7 @@
     .info ul { padding-left: 22px; }
     .info li { margin-bottom: 14px; }
     .info p:last-child { margin-bottom: 0; }
+    .info.wide { grid-column: 1 / -1; }
     footer { background: #253b32; color: #fff; padding: 38px 24px; }
     .footer-inner { max-width: 1100px; margin: 0 auto; }
     @media (max-width: 760px) {
@@ -32,6 +33,7 @@
       nav { display: none; }
       main { padding-top: 45px; }
       .grid { grid-template-columns: 1fr; }
+      .info.wide { grid-column: auto; }
       .notice, .info { padding: 26px; }
     }
   </style>
@@ -67,19 +69,21 @@
       </ul>
     </section>
     <section class="info">
-      <h2>Service i boligen</h2>
-      <p>Beboere kan bestille service og filterbytte for ventilasjonen i egen bolig separat. Bestilling må normalt gjøres minst én måned i forveien, slik at riktige filtre kan bestilles.</p>
-      <p>Kostnaden for arbeid og filtre dekkes av den enkelte beboer. Kontakt styret dersom du ønsker å bli med på en samordnet bestilling.</p>
-    </section>
-    <section class="info">
       <h2>Om avtalen</h2>
       <p><strong>Serviceleverandør:</strong> Flow Klima Oslo AS</p>
       <p><strong>Anleggstype:</strong> Næringsventilasjon med tillufts- og avtrekksvifter</p>
       <p>Filter og nødvendig materiell kommer i tillegg til den faste servicen.</p>
     </section>
+    <section class="info wide">
+      <h2>Ventilasjon i boenhetene</h2>
+      <p>FDV-dokumentasjonen inneholder opplysninger om både vegghengt <strong>Flexit Nordic S4</strong> og takhengt <strong>Flexit Nordic CL4</strong>. Begge modellseriene kan styres med Flexit GO.</p>
+      <p>Det er foreløpig ikke bekreftet hvilken modell som er montert i hver enkelt boenhet. Kontroller derfor typeskiltet på aggregatet før du bestiller filter, service eller reservedeler.</p>
+      <p>Beboere kan bestille service og filterbytte separat. Bestilling må normalt gjøres minst én måned i forveien, slik at riktige filtre kan skaffes. Arbeid og filtre dekkes av den enkelte beboer.</p>
+      <p>Kontakt styret dersom du er usikker på modell eller ønsker å delta i en samordnet bestilling.</p>
+    </section>
   </div>
 </main>
 <footer><div class="footer-inner"><a href="../finn-frem/">Finn frem til oss</a><span class="sep">|</span><a href="../kontakt/">Kontakt oss</a></div></footer>
-<script src="../assets/subpage-nav.js?v=20260909"></script>
+<script src="../assets/subpage-nav.js?v=20260915"></script>
 </body>
 </html>
