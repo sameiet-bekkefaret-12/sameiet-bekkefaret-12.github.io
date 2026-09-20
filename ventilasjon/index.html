@@ -26,6 +26,12 @@
     .info li { margin-bottom: 14px; }
     .info p:last-child { margin-bottom: 0; }
     .info.wide { grid-column: 1 / -1; }
+    .table-wrap { margin-top: 24px; overflow-x: auto; }
+    .serial-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+    .serial-table th, .serial-table td { padding: 12px 14px; border-bottom: 1px solid #d2cfc8; text-align: left; }
+    .serial-table th { background: #25282a; color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: .045em; }
+    .serial-table tbody tr:last-child td { border-bottom: 0; }
+    .serial-table .missing { color: #666b6d; font-style: italic; }
     footer { background: #253b32; color: #fff; padding: 38px 24px; }
     .footer-inner { max-width: 1100px; margin: 0 auto; }
     @media (max-width: 760px) {
@@ -80,6 +86,26 @@
       <p>Det er foreløpig ikke bekreftet hvilken modell som er montert i hver enkelt boenhet. Kontroller derfor typeskiltet på aggregatet før du bestiller filter, service eller reservedeler.</p>
       <p>Beboere kan bestille service og filterbytte separat. Bestilling må normalt gjøres minst én måned i forveien, slik at riktige filtre kan skaffes. Arbeid og filtre dekkes av den enkelte beboer.</p>
       <p>Kontakt styret dersom du er usikker på modell eller ønsker å delta i en samordnet bestilling.</p>
+      <h3>Serienumre for Flexit-anleggene</h3>
+      <p>Serienumrene brukes ved bestilling av riktige filtre, service og reservedeler. Oversikten omfatter de åtte boenhetene og ventilasjonsanlegget i fellesgarasjen.</p>
+      <div class="table-wrap">
+        <table class="serial-table">
+          <thead>
+            <tr><th>Adresse eller anlegg</th><th>Serienummer</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bekkefaret 12 A</td><td>800131-008898</td></tr>
+            <tr><td>Bekkefaret 12 B</td><td class="missing">Mangler serienummer</td></tr>
+            <tr><td>Bekkefaret 12 C</td><td>800220-002901</td></tr>
+            <tr><td>Bekkefaret 12 D</td><td class="missing">Mangler serienummer</td></tr>
+            <tr><td>Bekkefaret 12 E</td><td>800130-009198</td></tr>
+            <tr><td>Bekkefaret 12 F</td><td>800220-002903</td></tr>
+            <tr><td>Bekkefaret 12 G</td><td>800130-009050</td></tr>
+            <tr><td>Bekkefaret 12 H</td><td>800131-008812</td></tr>
+            <tr><td>Fellesgarasjen</td><td>800110-004729</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </div>
 </main>
