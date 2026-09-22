@@ -15,6 +15,6 @@ const footer=document.querySelector('footer');
 if(footer){
   const updated=document.createElement('p');
   updated.className='last-updated';
-  updated.textContent='Sist oppdatert: 20. september 2026';
+  updated.textContent='Sist oppdatert: '+(document.body.dataset.lastUpdated||'20. september 2026');
   footer.parentNode.insertBefore(updated,footer);
 }
