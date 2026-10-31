@@ -54,7 +54,8 @@
     clearTimeout(timer);
     const now = new Date();
     const parts = Object.fromEntries(clock.formatToParts(now).map(p => [p.type, p.value]));
-    const active = preview || (parts.month === '10' && parts.day === '31');
+    const active = preview || (parts.month === '10' && ['30', '31'].includes(parts.day))
+      || (parts.month === '11' && parts.day === '01');
     if (active && !layer) mount();
     if (!active && layer) {
       layer.remove(); pumpkin.remove();

@@ -3,7 +3,8 @@
 ## Halloween
 
 Alle 15 HTML-sider laster `assets/halloween.css` og `assets/halloween.js`.
-Temaet vises bare 31. oktober i tidssonen `Europe/Oslo`, hvert år.
+Temaet vises 30. og 31. oktober samt 1. november i tidssonen `Europe/Oslo`, hvert år.
+Det aktiveres 30. oktober kl. 00.00 og slås av 2. november kl. 00.00.
 Åpne faner oppdateres ved midnatt og når fanen blir synlig igjen.
 
 - Fire langsomme løv, tre små flaggermus og én edderkopp; mobil viser to løv og to flaggermus.

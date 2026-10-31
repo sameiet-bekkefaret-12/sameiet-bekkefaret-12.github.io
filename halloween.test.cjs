@@ -26,19 +26,26 @@ test('Oslo date boundaries and annual recurrence, independent of visitor timezon
   for (const year of [2026,2027,2028,2032]) {
     // In 2027/2032 the clocks go back on Oct 31, so midnight is still UTC+2.
     const startHour = [2027,2032].includes(year) ? '22' : '23';
-    const start = Date.parse(`${year}-10-30T${startHour}:00:00Z`);
+    const start = Date.parse(`${year}-10-29T${startHour}:00:00Z`);
     assert.equal(setup(start-1).nodes.length,0);
     assert.equal(setup(start).nodes.length,3);
     assert.equal(setup(`${year}-10-31T22:59:59Z`).nodes.length,3);
-    assert.equal(setup(`${year}-10-31T23:00:00Z`).nodes.length,0);
+    assert.equal(setup(`${year}-10-31T23:00:00Z`).nodes.length,3);
+    assert.equal(setup(`${year}-11-01T22:59:59.999Z`).nodes.length,3);
+    assert.equal(setup(`${year}-11-01T23:00:00Z`).nodes.length,0);
   }
 });
 test('Open tab activates and removes decorations at midnight',()=>{
-  const env=setup('2026-10-30T22:59:59.750Z');
+  const env=setup('2026-10-29T22:59:59.750Z');
   assert.equal(env.pending.delay,250);
-  env.setTime('2026-10-30T23:00:00Z');
+  env.setTime('2026-10-29T23:00:00Z');
   assert.equal(env.nodes.length,3);
   env.setTime('2026-10-31T23:00:00Z');
+  assert.equal(env.nodes[0].removed,undefined);
+  assert.equal(env.nodes.length,3);
+  env.setTime('2026-11-01T22:59:59.750Z');
+  assert.equal(env.pending.delay,250);
+  env.setTime('2026-11-01T23:00:00Z');
   assert.equal(env.nodes[0].removed,true);
   assert.equal(env.nodes[1].removed,true);
 });
@@ -53,6 +60,6 @@ test('Reduced motion and manual pause work and react to preference changes',()=>
   assert.equal(env.nodes[0].attributes['aria-hidden'],'true');
 });
 test('Preview override is limited to local development',()=>{
-  assert.equal(setup('2026-11-01T12:00:00Z',false,'example.com','?halloween=preview').nodes.length,0);
-  assert.equal(setup('2026-11-01T12:00:00Z',false,'127.0.0.1','?halloween=preview').nodes.length,3);
+  assert.equal(setup('2026-11-02T12:00:00Z',false,'example.com','?halloween=preview').nodes.length,0);
+  assert.equal(setup('2026-11-02T12:00:00Z',false,'127.0.0.1','?halloween=preview').nodes.length,3);
 });
